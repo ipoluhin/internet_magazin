@@ -51,6 +51,7 @@ body a:hover
   text-decoration: none
   text-transform: uppercase
 
+
 .bran
   font-family: $font
   font-weight: 300
@@ -62,6 +63,7 @@ body a:hover
   font-family: $font
   font-weight: 700
   letter-spacing: 0.68px
+  line-height: 32px
 
 .header__form
   display: flex
@@ -95,23 +97,22 @@ body a:hover
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
 
 .browse_drop
-  width: 210px
   position: absolute
   top: 48px
   border-radius: 5px
   border: 1px solid #ececec
   background-color: #ffffff
-  padding: 12px 20px 20px
+  padding: 13px 20px 20px 13px
   visibility: hidden
   text-align: left
   margin-top: 20px
+  margin-left: 90px
 
 .browse:hover .browse_drop
   visibility: visible
   z-index: 2
 
 .browse_drop_flex
-  width: 235px
   margin-right: 46px
 
 
@@ -368,6 +369,7 @@ body a:hover
   color: $pink
 
 .drop_h3
+  width: 236px
   border-bottom: 1px solid #ececec
   padding-bottom: 8px
   padding-top: 8px
@@ -1286,3 +1288,50 @@ footer
   bottom: 2px
   right: -2px
 
+footer
+  margin: $auto
+  width: 1617px
+  height: 79px
+  background-color: #e6e6e6
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .rights
+    width: 260px
+    height: 14px
+    color: #7a7a7a
+    font-family: $font
+    font-size: 16px
+    font-weight: 400
+    line-height: 32px
+    letter-spacing: 0.4px
+    text-align: center
+    margin: $auto
+  .social
+    display: flex
+    width: 191px
+    height: 32px
+    margin: $auto
+    .social__block
+      width: 32px
+      height: 32px
+      background-color: #ffffff
+      margin: $auto
+      display: flex
+      justify-content: center
+      align-items: center
+      .pic
+        width: 9px
+        height: 16px
+        font-size: 16px
+        font-weight: 400
+        line-height: 42px
+        letter-spacing: 0.4px
+        text-decoration: none
+        color: #b2b2b2
+      a
+        text-decoration: none
+    .social__block:hover
+      background-color: $pink
+      .pic
+        background-color: $pink

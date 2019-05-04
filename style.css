@@ -76,7 +76,8 @@ body a:hover {
   color: #f16d7f;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.68px; }
+  letter-spacing: 0.68px;
+  line-height: 32px; }
 
 .header__form {
   display: -webkit-box;
@@ -119,23 +120,22 @@ body a:hover {
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%); }
 
 .browse_drop {
-  width: 210px;
   position: absolute;
   top: 48px;
   border-radius: 5px;
   border: 1px solid #ececec;
   background-color: #ffffff;
-  padding: 12px 20px 20px;
+  padding: 13px 20px 20px 13px;
   visibility: hidden;
   text-align: left;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 90px; }
 
 .browse:hover .browse_drop {
   visibility: visible;
   z-index: 2; }
 
 .browse_drop_flex {
-  width: 235px;
   margin-right: 46px; }
 
 .button {
@@ -433,6 +433,7 @@ body a:hover {
   color: #f16d7f; }
 
 .drop_h3 {
+  width: 236px;
   border-bottom: 1px solid #ececec;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -1542,5 +1543,67 @@ footer {
   position: relative;
   bottom: 2px;
   right: -2px; }
+
+footer {
+  margin: 0 auto;
+  width: 1617px;
+  height: 79px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  footer .rights {
+    width: 260px;
+    height: 14px;
+    color: #7a7a7a;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin: 0 auto; }
+  footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 191px;
+    height: 32px;
+    margin: 0 auto; }
+    footer .social .social__block {
+      width: 32px;
+      height: 32px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      footer .social .social__block .pic {
+        width: 9px;
+        height: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        color: #b2b2b2; }
+      footer .social .social__block a {
+        text-decoration: none; }
+    footer .social .social__block:hover {
+      background-color: #f16d7f; }
+      footer .social .social__block:hover .pic {
+        background-color: #f16d7f; }
 
 /*# sourceMappingURL=style.css.map */
