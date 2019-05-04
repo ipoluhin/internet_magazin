@@ -1,0 +1,259 @@
+@import 'vars'
+
+
+.product_info
+  margin: 0 auto
+  width: 1610px
+  height: 780px
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .product_view_previus,
+  .product_view_next
+    width: 47px
+    height: 47px
+    background-color: #d8d8d8
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .fas .fa-chevron-left,
+    .fas .fa-chevron-right
+      width: 8px
+      height: 14px
+      color: #ffffff
+      font-size: -24px
+      font-weight: 400
+      line-height: -24px
+
+  .product_view
+    margin-bottom: 40px
+    width: 597px
+    height: 724px
+
+.category_collection
+  margin: $auto
+  width: 1140px
+  height: 730px
+  border: 1px solid #f7f7f7
+  background-color: #ffffff
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: -90px
+  border-bottom: 1px solid #efefef
+
+  .category_collection_info_block
+    width: 640px
+    height: 330px
+    background-color: #ffffff
+    margin-top: 75px
+    margin-bottom: 63px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+
+    .cat_h3_name
+      color: #f16d7f
+      font-family: $font
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+
+    .hr
+      width: 63px
+      height: 3px
+      background-color: #ef5b70
+
+    .cat_h3_name_desc
+      color: #4d4d4d
+      font-family: $font
+      font-size: 18px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+
+    .category_collection_info_block_text
+      color: #5e5e5e
+      font-family: $font
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      text-align: center
+
+    .short_item_desc
+      display: flex
+      justify-content: space-between
+      width: 350px
+
+      .h3_d,
+      .h3_m
+        color: #b9b9b9
+        font-family: $font
+        font-size: 14px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+
+        .h3_d_bl,
+        .h3_m_bl
+          color: #2f2f2f
+
+    .cat_item_price
+      color: #ef5b70
+      font-family: $font
+      font-size: 24px
+      font-weight: 700
+      line-height: 24px
+      margin-bottom: 43px
+
+  .category_collection_options
+    width: 540px
+    height: 61px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .category_collection_options_var
+      width: 540px
+      height: 61px
+      display: flex
+      justify-content: space-between
+
+    .var_set
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      .var_set_name
+        color: #2f2f2f
+        font-family: $font
+        font-size: 14px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+
+      .var_set_drop,
+      .var_set_drop_size,
+      .pole_quantity
+        width: 144px
+        height: 35px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 14px
+        padding-right: 10px
+
+        .cube
+          width: 12px
+          height: 12px
+          background-color: #ef5b70
+
+        .cube_color
+          color: #bcbcbc
+          font-family: $font
+          font-size: 13px
+          font-weight: 400
+          line-height: 24px
+          margin-left: -50px
+
+        .var_set_drop .fa-chevron-down
+          width: 9px
+          height: 5px
+          color: #bcbcbc
+          font-size: 14px
+          font-weight: 400
+          line-height: 24px
+
+        .var_set_drop_flex
+          width: 144px
+          height: 35px
+          border: 1px solid #eaeaea
+          background-color: #ffffff
+          align-items: center
+          padding-left: 14px
+          display: none
+
+          .var_set_drop:hover .var_set_drop_flex
+            display: flex
+
+        .var_set_drop_size
+          .cube_size
+            color: #bcbcbc
+            font-family: $font
+            font-size: 13px
+            font-weight: 400
+            line-height: 24px
+            text-transform: uppercase
+
+      .pole_quantity
+        padding-left: 15px
+        padding-right: 15px
+
+      .var_set_drop_size
+        color: #bcbcbc
+        font-family: $font
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+
+
+  .btn_add_to_cart
+    width: 538px
+    height: 55px
+    margin-top: 28px
+    outline: 1px solid #ef5b70
+    color: #ef5b70
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding-left: 200px
+    padding-right: 200px
+
+    .btn_add_to_cart_img
+      width: 26px
+      height: 24px
+
+    .btn_add_to_cart_text
+      width: 83px
+      height: 11px
+      color: #ef5b70
+      font-family: $font
+      font-size: 16px
+      font-weight: 700
+      margin-left: 15px
+
+.product_collection
+  margin: 0 auto
+  width: 1140px
+  height: 455px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+
+  .product_collection_also_text
+    color: #4d4d4d
+    font-family: $font
+    font-size: 24px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+
+  .product_collection_random
+    width: 1140px
+    display: flex
+    justify-content: space-between
+                                         
+                     
+
