@@ -17,7 +17,7 @@ body
 
 .container
   width: 1140px
-  margin: 0 auto
+  margin: $auto
 
 
 .header-flex
@@ -245,7 +245,7 @@ body
   height: 823px
   display: flex
   flex-wrap: wrap
-  margin: 0 auto
+  margin: $auto
   justify-content: space-between
   align-items: stretch
 
@@ -354,11 +354,11 @@ body
   align-items: center
   width: 1140px
   height: 982px
-  margin: 0 auto
+  margin: $auto
 
 
 .f_items_text
-  margin: 0 auto
+  margin: $auto
   width: 348px
   height: 51px
   display: flex
@@ -374,7 +374,7 @@ body
   font-family: $font
   font-size: 27px
   font-weight: 700
-  margin: 0 auto
+  margin: $auto
   display: flex
   justify-content: center
   letter-spacing: 0.75px
@@ -396,7 +396,7 @@ body
 
 
 .catalog
-  margin: 0 auto
+  margin: $auto
   width: 1140px
   height: 767px
   display: flex
@@ -518,7 +518,7 @@ body
 
 
 .offer_banner
-  margin: 0 auto
+  margin: $auto
   width: 1140px
   height: 529px
   background-color: #222224
@@ -611,7 +611,7 @@ body
 
 
 .subscribes
-  margin: 0 auto
+  margin: $auto
   width: 1610px
   height: 438px
   background-color: #f2f2f2
@@ -754,7 +754,7 @@ body
 
 
 .infoblock
-  margin: 0 auto
+  margin: $auto
   width: 1099px
   height: 260px
   display: flex
@@ -831,36 +831,49 @@ body
 
 
 footer
-  margin: 0 auto
+  margin: $auto
   width: 1617px
   height: 79px
   background-color: #e6e6e6
   display: flex
   align-items: center
   justify-content: space-between
-
-
-.rights
-  width: 260px
-  height: 14px
-  color: #7a7a7a
-  font-family: $font
-  font-size: 16px
-  font-weight: 400
-  line-height: 42px
-  letter-spacing: 0.4px
-  text-align: center
-  margin-left: 238px
-
-
-.cocial
-  width: 191px
-  height: 32px
-  margin-right: 238px
-
-
-.cocial a img
-  width: 32px
-  height: 32px
-  background-color: #ffffff
-
+  .rights
+    width: 260px
+    height: 14px
+    color: #7a7a7a
+    font-family: $font
+    font-size: 16px
+    font-weight: 400
+    line-height: 32px
+    letter-spacing: 0.4px
+    text-align: center
+    margin: $auto
+  .social
+    display: flex
+    width: 191px
+    height: 32px
+    margin: $auto
+    .social__block
+      width: 32px
+      height: 32px
+      background-color: #ffffff
+      margin: $auto
+      display: flex
+      justify-content: center
+      align-items: center
+      .pic
+        width: 9px
+        height: 16px
+        font-size: 16px
+        font-weight: 400
+        line-height: 42px
+        letter-spacing: 0.4px
+        text-decoration: none
+        color: #b2b2b2
+      a
+        text-decoration: none
+    .social__block:hover
+      background-color: $pink
+      .pic
+        background-color: $pink
