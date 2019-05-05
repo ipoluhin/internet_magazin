@@ -50,7 +50,6 @@
 }
 
 .category_collection {
-  margin: 0 auto;
   width: 1140px;
   height: 730px;
   border: 1px solid #f7f7f7;
@@ -65,8 +64,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -90px;
+  margin: -90px auto;
   border-bottom: 1px solid #efefef;
+  position: relative;
 }
 
 .category_collection .category_collection_info_block {
@@ -272,9 +272,9 @@
   display: none;
 }
 
-.category_collection .category_collection_options .var_set .var_set_drop .var_set_drop_flex .var_set_drop:hover .var_set_drop_flex,
-.category_collection .category_collection_options .var_set .var_set_drop_size .var_set_drop_flex .var_set_drop:hover .var_set_drop_flex,
-.category_collection .category_collection_options .var_set .pole_quantity .var_set_drop_flex .var_set_drop:hover .var_set_drop_flex {
+.category_collection .category_collection_options .var_set .var_set_drop .var_set_drop_flex .fa-chevron-down:hover .var_set_drop_flex,
+.category_collection .category_collection_options .var_set .var_set_drop_size .var_set_drop_flex .fa-chevron-down:hover .var_set_drop_flex,
+.category_collection .category_collection_options .var_set .pole_quantity .var_set_drop_flex .fa-chevron-down:hover .var_set_drop_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,6 +881,7 @@ body a:hover {
 .drop_flex {
   width: 235px;
   margin-right: 46px;
+  position: relative;
 }
 
 .drop_flex:last-of-type {

@@ -35,7 +35,6 @@
     height: 724px
 
 .category_collection
-  margin: $auto
   width: 1140px
   height: 730px
   border: 1px solid #f7f7f7
@@ -43,8 +42,9 @@
   display: flex
   flex-direction: column
   align-items: center
-  margin-top: -90px
+  margin: -90px auto
   border-bottom: 1px solid #efefef
+  position: relative
 
   .category_collection_info_block
     width: 640px
@@ -86,6 +86,7 @@
       font-weight: 400
       line-height: 24px
       text-align: center
+      
 
     .short_item_desc
       display: flex
@@ -182,7 +183,7 @@
           padding-left: 14px
           display: none
 
-          .var_set_drop:hover .var_set_drop_flex
+          .fa-chevron-down:hover .var_set_drop_flex
             display: flex
 
         .var_set_drop_size
