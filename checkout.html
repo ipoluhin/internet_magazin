@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shop Cart</title>
+    <title>Checkout</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -263,145 +263,43 @@
 
 <div class="clear__div"></div>
 
-<div class="shop-cart">
-    <div class="product-categories">
-        <div class="product-categories__details product-categories__details_text">Product Details</div>
-        <div class="product-categories__status">
-            <div class="product-categories__status_text">Unite Price</div>
-            <div class="product-categories__status_text">Quantity</div>
-            <div class="product-categories__status_text">Shipping</div>
-            <div class="product-categories__status_text">Subtotal</div>
-            <div class="product-categories__status_text">Action</div>
-        </div>
-    </div>
-
-    <div class="product-block">
-        <div class="product-block__product">
-            <div class="product-details">
-                <a href="product.html" class="photo product-details__photo"><img src="img/cat_item1_small.jpg"
-                                                                                 alt="prouct-photo"></a>
-                <div class="description product-details__description">
-                    <a href="product.html">Mango People T-shirt</a>
-                    <div class="description__color-size">
-                        <div class="color description__color-size_color">Color: Red</div>
-                        <div class="size description__color-size_size">Size: XII</div>
-                    </div>
+<div class="checkout-information">
+    <div class="punkt1">
+        <div class="position">01. Shipping Adress</div>
+        <div class="drop-block">
+            <div class="check-block">
+                <div class="head-block">Check as a guest or register</div>
+                <div class="head-gray">Register with us for future convenience</div>
+                <div class="radio-block">
+                    <input type="radio" name="radio" />checkout as guest <br>
+                    <input type="radio" name="radio" checked />register
+                </div>
+                <div class="head-block">Register and save time!</div>
+                <div class="head-gray">Register with us for future convenience</div>
+                <div class="chevron-text-gray"><i class="fas fa-chevron-double-right"></i>Fast and easy checkout</div>
+                <div class="chevron-text-gray">Easy access to your order history and status</div>
+                <div class="continue"><a href="#">continue</a></div>
+            </div>
+            <div class="login-block">
+                <div class="headblock">Already registed?</div>
+                <div class="head-gray">Please log in below</div>
+                <div class="head-block">EMAIL ADDRESS<span class="star_red">*</span></div>
+                <input class="input-form" type="text" placeholder="">
+                <div class="head-block">PASSWORD<span class="star_red">*</span></div>
+                <input class="input-form" type="text" placeholder="">
+                <span class="star_red">* Required Fields</span>
+                <div class="login-password">
+                    <div class="login"><a href="#">login</a></div>
+                    <div class="forgot-text"><a href="#">Forgot Password ?</a></div>
                 </div>
             </div>
-            <div class="product-status">
-                <div class="product-status__value product-status__value_Unite-Price">$150</div>
-                <div class="product-status__value product-status__value_Quantity">2</div>
-                <div class="product-status__value product-status__value_Shipping">free</div>
-                <div class="product-status__value product-status__value_Subtotal">300</div>
-                <div class="product-status__value"><i class="fas fa-times-circle"></i></div>
-            </div>
-        </div>
-
-        <div class="product-block__product">
-            <div class="product-details">
-                <a href="product.html" class="photo product-details__photo"><img src="img/cat_item1_small.jpg"
-                                                                                 alt="prouct-photo"></a>
-                <div class="description product-details__description">
-                    <a href="product.html">Mango People T-shirt</a>
-                    <div class="description__color-size">
-                        <div class="color description__color-size_color">Color: Red</div>
-                        <div class="size description__color-size_size">Size: XII</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-status">
-                <div class="product-status__value product-status__value_Unite-Price">$150</div>
-                <div class="product-status__value product-status__value_Quantity">2</div>
-                <div class="product-status__value product-status__value_Shipping">free</div>
-                <div class="product-status__value product-status__value_Subtotal">300</div>
-                <div class="product-status__value"><i class="fas fa-times-circle"></i></div>
-            </div>
-        </div>
-
-        <div class="product-block__product">
-            <div class="product-details">
-                <a href="product.html" class="photo product-details__photo"><img src="img/cat_item1_small.jpg"
-                                                                                 alt="prouct-photo"></a>
-                <div class="description product-details__description">
-                    <a href="product.html">Mango People T-shirt</a>
-                    <div class="description__color-size">
-                        <div class="color description__color-size_color">Color: Red</div>
-                        <div class="size description__color-size_size">Size: XII</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-status">
-                <div class="product-status__value product-status__value_Unite-Price">$150</div>
-                <div class="product-status__value product-status__value_Quantity">2</div>
-                <div class="product-status__value product-status__value_Shipping">free</div>
-                <div class="product-status__value product-status__value_Subtotal">300</div>
-                <div class="product-status__value"><i class="fas fa-times-circle"></i></div>
-            </div>
         </div>
     </div>
-
-    <div class="menu-shopping-cart">
-        <button class="menu-button menu-button__text" type="reset">CLEAR SHOPPING CART</button>
-        <button class="menu-button menu-button__text" type="button">CONTINUE SHOPPING</button>
-    </div>
-
-    <div class="cart-settigs">
-        <div class="shipping-adress">
-            <div class="shipping-adress__header">shipping adress</div>
-            <div class="shipping-adress__options">
-                <input class="city" type="text" placeholder="Bangladesh">
-                <input class="state" type="text" placeholder="State">
-                <input class="postcode" type="number" placeholder="Postcode / Zip">
-            </div>
-        </div>
-        <div class="coupon-discount">
-            <div class="coupon-discount__header">coupon discount</div>
-            <div class="coupon-discount__options">
-                <div class="text">Enter your coupon code if you have one</div>
-                <input class="state" type="number" placeholder="State">
-                <button class="apply" type="submit">Apply coupon</button>
-            </div>
-        </div>
-        <div class="total">
-            <div class="total-content">
-                <div class="total-content__text">
-                    <div class="sub-total">Sub total<span class="sub-total__price">$900</span></div>
-                    <div class="grand__total">GRAND TOTAL<span class="pink grand__total_pink">$900</span></div>
-                </div>
-                <div class="total-content__checkout"><a href="#">proceed to checkout</a></div>
-            </div>
-        </div>
-    </div>
-
-    <button class="qet-a-quote qet-a-quote__text" type="submit">GET A QUOTE</button>
-
-</div>
-
-<div class="clear__div"></div>
-
-<div class="subscribes">
-    <div class="left_page">
-        <div class="quotes">
-            <div class="list_q">
-                <img class="list_q_face" src="img/face.png" alt="face">
-                <div class="list_q_text"><span class="text_qoute">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</span>
-                    <span class="autor"><span class="bin">Bin Burhan</span><br>Dhaka, Bd</span></div>
-            </div>
-            <div class="slider"><img src="img/slider.svg" alt="slider"></div>
-        </div>
-    </div>
-    <div class="right_page">
-        <div class="subscribe_form">
-            <div class="subscribe_text">Subscribe
-                <div class="new_prom">FOR OUR NEWLETTER AND PROMOTION</div>
-            </div>
-            <form class="subscribe_form_pole" action="#">
-                <input class="subscribe_pole" type="text" placeholder="Enter Your Email">
-                <button class="button_subscribe" type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
+    <div class="punkt2"><div class="punkt__position">02. BILLING INFORMATION</div></div>
+    <div class="punkt3"><div class="punkt__position">03. SHIPPING INFORMATION</div></div>
+    <div class="punkt4"><div class="punkt__position">04. SHIPPING METHOD</div></div>
+    <div class="punkt5"><div class="punkt__position">05. PAYMENT METHOD</div></div>
+    <div class="punkt6"><div class="punkt__position">06. ORDER REVIEW</div></div>
 </div>
 
 <div class="clear__div"></div>
@@ -409,10 +307,10 @@
 <footer class="infoblock">
     <div class="brand_info">
         <div class="logo">
-                <a href="index.html" class="logo__img"><img src="img/brand.png" alt="logo"></a>
-                    <div class="logo__text">
-                        <a href="index.html"> <span class="bran">BRAN</span><span class="d">D</span></a>
-                    </div>
+            <a href="index.html" class="logo__img"><img src="img/brand.png" alt="logo"></a>
+            <div class="logo__text">
+                <a href="index.html"> <span class="bran">BRAN</span><span class="d">D</span></a>
+            </div>
         </div>
         <div class="info_footer">
             <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate

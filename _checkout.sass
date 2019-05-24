@@ -1,0 +1,156 @@
+@import "mixins"
+@import "vars"
+
+.checkout-information
+  width: $width-container
+  margin: $auto
+  .punkt1, .punkt2, .punkt3, .punkt4, .punkt5, .punkt6
+    +wxh($width-container, 70px)
+    border-bottom: 1px solid #e8e8e8
+    display: flex
+    align-items: center
+  .punkt1
+    color: #222222
+    font-family: $font
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    &:hover
+      flex-direction: column
+      align-items: flex-start
+      height: 474px
+    &:hover .drop-block
+      visibility: visible
+    &:hover .position
+      margin-bottom: 38px
+    .drop-block
+      width: 873px
+      visibility: hidden
+      +display-flex($sb)
+      .check-block
+        +display-flex($sb)
+        flex-direction: column
+        height: 342px
+        .head-block
+          color: #222222
+          font-family: $font
+          font-size: 13px
+          font-weight: 400
+          text-transform: uppercase
+          .star_red
+            color: #ff0d0d
+            font-family: $font
+            font-size: 17px
+            font-weight: 400
+            line-height: 20px
+        .head-gray
+          color: #b3b2b2
+          font-family: $font
+          font-size: 13px
+          font-weight: 400
+          line-height: 20px
+          margin-bottom: 30px
+        .radio-block
+          color: #222222
+          font-family: $font
+          font-size: 12px
+          font-weight: 400
+          text-transform: uppercase
+          margin-bottom: 30px
+        .chevron-text-gray
+          color: #b3b2b2
+          font-family: $font
+          font-size: 13px
+          font-weight: 400
+          line-height: 20px
+        .continue
+          width: 180px
+          height: 50px
+          border: 1px solid #e8e8e8
+          background-color: #ffffff
+          color: #4a4a4a
+          font-family: $font
+          font-size: 14px
+          font-weight: 700
+          text-transform: uppercase
+          +display-flex(center)
+          align-items: center
+          margin-top: 30px
+          a
+            color: #4a4a4a
+          &:hover
+            box-shadow: 0 0 1px #838383
+
+    .login-block
+      +wxh(391px, 342px)
+      +display-flex($sb)
+      flex-direction: column
+      .head-block
+        color: #222222
+        font-family: $font
+        font-size: 13px
+        font-weight: 400
+        text-transform: uppercase
+        border-bottom: 15px
+        .star_red
+          color: #ff0d0d
+          font-family: $font
+          font-size: 17px
+          font-weight: 400
+          line-height: 20px
+      .head-gray
+        color: #b3b2b2
+        font-family: $font
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+        margin-bottom: 27px
+      .input-form
+        width: 390px
+        height: 45px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        margin-bottom: 24px
+      .star_red
+        color: #ff0d0d
+        font-family: $font
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+      .login-password
+        +wxh(390px,50px)
+        +display-flex($sb)
+        align-items: center
+        margin-top: 30px
+        .forgot-text
+          color: #222222
+          font-family: $font
+          font-size: 14px
+          font-weight: 400
+          line-height: 20px
+          margin-left: 20px
+          +display-flex($sa)
+          a
+            color: #4a4a4a
+          &:hover
+            color: #4a4a4a
+        .login
+          width: 180px
+          height: 50px
+          border: 1px solid #e8e8e8
+          background-color: #ffffff
+          color: #4a4a4a
+          font-family: $font
+          font-size: 14px
+          font-weight: 700
+          text-transform: uppercase
+          +display-flex(center)
+          align-items: center
+          flex-wrap: wrap
+          a
+            color: #4a4a4a
+          &:hover
+            box-shadow: 0 0 1px #838383
+
+
+

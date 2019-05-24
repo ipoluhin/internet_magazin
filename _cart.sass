@@ -1,0 +1,258 @@
+@import 'vars'
+@import "mixins"
+
+.shop-cart
+  width: $width-container
+  height: 955px
+  margin: $auto
+  +display-flex($sb)
+  flex-direction: column
+
+  .product-categories
+    width: $width-container
+    height: 33px
+    +display-flex($sb)
+    border-bottom: 1px solid #eaeaea
+    color: #222222
+    font-family: $font
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: -0.2px
+    &__details
+      +display-flex($sb)
+      align-items: center
+      &_text
+        color: #222222
+        font-family: $font
+        font-size: 13px
+        font-weight: 700
+        line-height: 20px
+        text-transform: uppercase
+        letter-spacing: -0.2px
+    &__status
+      +display-flex($sb)
+      align-items: center
+      width: 630px
+      &_text
+        color: #222222
+        font-family: $font
+        font-size: 13px
+        font-weight: 700
+        line-height: 20px
+        text-transform: uppercase
+        letter-spacing: -0.2px
+
+
+  .product-block
+    width: $width-container
+    &__product
+      width: $width-container
+      height: 165px
+      border-bottom: 1px solid #eaeaea
+      +display-flex($sb)
+      align-items: center
+      padding-right: 18px
+      .product-details
+        +wxh(280px,115px)
+        +display-flex($sb)
+        &__photo
+          +wxh(100px,115px)
+      &:hover
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.16)
+      .product-details__description
+          +wxh(165px,80px)
+          margin-top: 18px
+          flex-direction: column
+          +display-flex($sb)
+          a
+            width: 165px
+            color: #222222
+            font-family: $font
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase
+          .description__color-size
+            &_color,
+            &_size
+              color: #6f6e6e
+              font-family: $font
+              font-size: 13px
+              font-weight: 300
+              line-height: 20px
+      .product-status
+        +wxh(588px,30px)
+        +display-flex($sb)
+        align-items: center
+        &_value
+          color: #656565
+          font-family: $font
+          font-size: 13px
+          font-weight: 400
+          line-height: 20px
+          text-transform: uppercase
+        .fa-times-circle
+          width: 15px
+          height: 15px
+          color: #c0c0c0
+          font-size: 16px
+          font-weight: 400
+          text-transform: uppercase
+          &:hover
+            color: #000000
+
+
+  .menu-shopping-cart
+    width: $width-container
+    height: 157px
+    +display-flex($sb)
+    align-items: center
+    .menu-button
+      width: 235px
+      height: 50px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      &__text
+        font-size: 12px
+        color: #4a4a4a
+        font-family: $font
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+          box-shadow: #4a4a4a
+
+
+  .cart-settigs
+    +display-flex($sb)
+    .shipping-adress
+      width: 355px
+      height: 210px
+      +display-flex($sb)
+      flex-direction: column
+      &__header
+        color: #222222
+        font-family: $font
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+      &__options
+        +wxh(355px,175px)
+        +display-flex($sb)
+        flex-direction: column
+        .city, .state, .postcode
+          +wxh(355px, 45px)
+          border: 1px solid #eaeaea
+          background-color: #ffffff
+          +display-flex($sb)
+          align-items: center
+          padding-left: 18px
+          padding-right: 18px
+    .coupon-discount
+      width: 355px
+      height: 210px
+      +display-flex($sb)
+      flex-direction: column
+      padding-bottom: 26px
+      &__header
+        color: #222222
+        font-family: $font
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+      &__options
+        +wxh(355px,143px)
+        +display-flex($sb)
+        flex-direction: column
+        .text
+          color: #000000
+          font-family: $font
+          font-size: 14px
+          font-weight: 300
+        .state
+          +wxh(355px, 45px)
+          +display-flex($sb)
+          align-items: center
+          border: 1px solid #eaeaea
+          background-color: #ffffff
+          padding-left: 18px
+          padding-right: 18px
+        .apply
+          width: 118px
+          height: 35px
+          border: 1px solid #eaeaea
+          background-color: #ffffff
+          +display-flex(center)
+          align-items: center
+          text-transform: uppercase
+          color: #4a4a4a
+          font-family: $font
+          font-size: 11px
+          font-weight: 700
+
+    .total
+      width: 360px
+      height: 214px
+      background-color: #f5f3f3
+      +display-flex($sa)
+      flex-direction: column
+      align-items: center
+      .total-content
+        +wxh(276px,132px)
+        +display-flex($sb)
+        flex-direction: column
+        align-items: flex-end
+        &__text
+          +wxh(166px,42px)
+          +display-flex($sb)
+          flex-direction: column
+          align-items: flex-end
+          .sub-total
+            color: #4a4a4a
+            font-family: $font
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            &__price
+              margin-left: 10px
+          .grand__total
+            color: #222222
+            font-family: $font
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            +display-flex($sb)
+            &_pink
+              margin-left: 10px
+        &__checkout
+          font-size: 15px
+          font-weight: 400
+          background-color: $pink
+          letter-spacing: 0.38px
+          +wxh(273px,50px)
+          padding-left: 19px
+          padding-right: 19px
+          line-height: 50px
+          +display-flex($sa)
+          align-items: center
+          a
+            color: #ffffff
+            text-decoration: none
+          &:hover a
+            color: #ffffff
+
+  .qet-a-quote
+    width: 100px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    &__text
+      color: #4a4a4a
+      font-family: $font
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+      display: flex
+      +display-flex(center)
+      align-items: center
+
